@@ -5,14 +5,13 @@
 <article class="gh-article {{post_class}}">
 
     <header class="gh-header gh-canvas">
-        <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
-        <h1 class="gh-title">{{title}}</h1>
+        <h1 class="gh-title">{{title}}<span> · <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time></span></h1>
 
         {{#if custom_excerpt}}
         <p class="gh-excerpt">{{custom_excerpt}}</p>
         {{/if}}
 
-        {{#if feature_image}}
+        {{!-- {{#if feature_image}}
         <figure class="gh-feature-image">
             <img
                 srcset="{{img_url feature_image size="s"}} 300w,
@@ -28,7 +27,7 @@
                 <figcaption>{{feature_image_caption}}</figcaption>
             {{/if}}
         </figure>
-        {{/if}}
+        {{/if}} --}}
     </header>
 
     <div class="gh-content gh-canvas">
@@ -37,9 +36,11 @@
 
     <footer class="gh-footer gh-canvas">
 
-        <div class="gh-post-authors">
+        <p>If you enjoyed this, you can <a href="{{@site.signup_url}}">subscribe to future posts</a>.</p>
+
+        {{!-- <div class="gh-post-authors">
             Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
-        </div>
+        </div> --}}
 
         {{#if comments}}
         <section class="gh-post-comments">
@@ -51,7 +52,7 @@
 
 </article>
 
-<aside class="gh-readmore">
+{{!-- <aside class="gh-readmore">
     <div class="gh-readmore-inner gh-container">
         <div class="gh-readmore-next">
             {{#next_post}}<a href="{{url}}">{{> "icons/arrow-left"}} <h4>{{title}}</h4></a>{{/next_post}}
@@ -62,6 +63,6 @@
             </a>{{/prev_post}}
         </div>
     </div>
-</aside>
+</aside> --}}
 
 {{/post}}

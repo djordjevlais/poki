@@ -8,12 +8,12 @@
     padding: 8vmin 4vmin 4vmin;
 }
 
-.gh-foot .gh-container {
-    width: auto;
-}
-
-.gh-foot a {
-    color: inherit;
+.gh-separator {
+    width: 140px;
+    margin-bottom: 16px;
+    border-top: 1px inset #ffd7bd;
+    border-style: inset;
+    border-width: 1px;
 }
 
 .gh-foot-menu {
@@ -50,8 +50,18 @@
     opacity: 0.5;
 }
 
+.gh-footer.gh-canvas {
+    margin-top: 32px;
+}
+
 @media (max-width: 700px) {
     .gh-foot-menu .nav {
         font-size: 1.6rem;
     }
+}
+
+.post-template .gh-foot {
+    width: 100%;
+    margin: 0 auto;
+    padding: 48px 0 32px;
 }

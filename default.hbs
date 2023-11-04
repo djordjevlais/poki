@@ -36,14 +36,13 @@
         <div class="gh-head-menu">
             {{navigation}}
         </div>
-        <div class="gh-head-actions">
+        {{!-- <div class="gh-head-actions">
             <div class="gh-head-actions-list">
-                {{search}}
                 {{#if @site.members_enabled}}
                     <a class="gh-button" href="{{@site.signup_url}}">Sign up</a>
                 {{/if}}
             </div>
-        </div>
+        </div> --}}
     </nav>
 </header>
 
@@ -56,12 +55,11 @@
 
 <footer class="gh-foot">
     <div class="gh-container">
-        <div class="gh-foot-menu">
-            {{navigation type="secondary"}}
-        </div>
-        <div class="gh-foot-meta">
+        <hr class="gh-separator"/>
+        <p>email me at <a href="mailto:dzvlais@gmail.com">dzvlais@gmail.com</a>, or follow me <a href="https://twitter.com/djordjevlais">@djordjevlais</a></p>
+        {{!-- <div class="gh-foot-meta">
             Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-        </div>
+        </div> --}}
     </div>
 </footer>
 
