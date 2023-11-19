@@ -12,7 +12,7 @@
     --color-error: #f05230;
 
     /* Fonts */
-    --font-sans-serif: "Lucida Grande", serif;
+    --font-sans-serif: "Lucida Grande", Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
     --font-serif: Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
