@@ -82,12 +82,12 @@
     margin-top: 6vmin !important;
 }
 
-.gh-content blockquote {
+.gh-content blockquote, .gh-page-head blockquote {
     position: relative;
     font-style: italic;
 }
 
-.gh-content blockquote::before {
+.gh-content blockquote::before, .gh-page-head blockquote::before {
     content: "";
     position: absolute;
     left: -1.5em;
