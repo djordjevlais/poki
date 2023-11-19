@@ -6,15 +6,13 @@
         {{#tag}}
         <header class="gh-page-head">
 
-            <h1>{{name}}</h1>
+            <p>There {{plural ../pagination.total empty='posts' singular='is ' plural='are '}}<strong>{{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}</strong> filed under <strong>{{name}}</strong></p>
 
-            <p>
-                {{#if description}}
-                    {{description}}
-                {{else}}
-                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
-                {{/if}}
-            </p>
+            {{#if description}}
+            <blockquote>
+                {{description}}
+            </blockquote>
+            {{/if}}
 
             {{#if feature_image}}
                 <img class="gh-page-image" src="{{feature_image}}" alt="{{name}}" />
