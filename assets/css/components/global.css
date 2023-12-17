@@ -18,19 +18,20 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    color: #000;
+    color: #212122;
     /* color: color-mix(in srgb, var(--color-base) 80%, white); */
     font-family: var(--font-sans-serif);
     font-size: 1.4rem;
-    line-height: 1.6em;
+    line-height: 23px;
     font-weight: 400;
     font-style: normal;
-    background: #F5C2A3;
+    background: #e0e0da;
     /* background-color: #ddddff; */
     scroll-behavior: smooth;
     /* -webkit-font-smoothing: antialiased; */
     /* -moz-osx-font-smoothing: grayscale; */
     letter-spacing: -0.02px;
+    text-transform: lowercase;
 }
 @media (max-width: 500px) {
     body {
@@ -135,6 +136,11 @@ ul:not([class]) li + li {
 a:not([class]) {
     color: var(--color-primary);
     text-decoration-skip-ink: auto;
+    text-underline-offset: 4px;
+}
+
+a:not([class]):hover {
+    opacity: 0.7;
 }
 
 a[class] {

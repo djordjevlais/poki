@@ -4,14 +4,14 @@
     <div class="gh-container">
 
         {{#tag}}
-        <header class="gh-page-head">
+        <header class="gh-page-head gh-page-head--tag">
 
-            <p>There {{plural ../pagination.total empty='posts' singular='is ' plural='are '}}<strong>{{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}</strong> filed under <strong>{{name}}</strong></p>
+            <p class="tag-counter">There {{plural ../pagination.total empty='posts' singular='is ' plural='are '}}<strong>{{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}</strong> filed under <strong>{{name}}</strong></p>
 
             {{#if description}}
-            <blockquote>
+            <p class="tag-description">
                 {{description}}
-            </blockquote>
+            </p>
             {{/if}}
 
             {{#if feature_image}}
@@ -22,11 +22,13 @@
         {{/tag}}
 
         <div class="gh-postfeed">
-        {{#foreach posts}}
+            <ul>
+                {{#foreach posts}}
 
-            {{> "card"}} {{!-- partials/card.hbs --}}
+                    {{> "list"}} {{!-- partials/card.hbs --}}
 
-        {{/foreach}}
+                {{/foreach}}
+            </ul>
         </div>
 
     </div>

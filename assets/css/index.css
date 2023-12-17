@@ -150,6 +150,14 @@ h2.gh-card-title {
     text-align: left;
 }
 
+.gh-page-head--tag .tag-counter {
+    margin-bottom: 12px;
+}
+
+.gh-page-head--tag .tag-description {
+    font-style: italic;
+}
+
 .gh-page-image {
     margin: 4vmin 0 0 0;
 }
@@ -251,8 +259,10 @@ h2.gh-card-title {
 }
 
 .intro img {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     width: 132px;
+    box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.55);
+    border-radius: 4px;
 }
 
 .block {
@@ -285,4 +295,8 @@ time {
 
 .gh-title {
     margin-bottom: 0;
+}
+
+.dont-wrap {
+    white-space: nowrap;
 }

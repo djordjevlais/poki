@@ -9,9 +9,8 @@
 }
 
 .gh-separator {
-    width: 140px;
     margin-bottom: 16px;
-    border-top: 1px inset #ffd7bd;
+    border-top: 1px inset #ffffd9;
     border-style: inset;
     border-width: 1px;
 }
